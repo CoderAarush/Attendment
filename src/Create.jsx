@@ -23,7 +23,7 @@ export default function Create(){
         })
 
         console.log(`The user, ${user} has entered their email as: ${email} with password: ${password}. They have confirmed the password with the phrase ${confirmed}`);
-        if(confirmed === password){
+        if(confirmed === password && user != '' && confirmed != '' && admin != '' &&(email.endsWith('@gmail.com') || email.endsWith('@hotmail.com') || email.endsWith('@yahoo.com') && password.length >= 6)){
             try{
                 const res = await axios.post('http://localhost:5000/save-login', {
                   email,
@@ -45,7 +45,7 @@ export default function Create(){
                 navigate('console');
         }
         else
-            console.error("Confirmed password and original do not match");
+            console.error("Invalid input credentials")
     }
     return(
         <div className="myCreatePage">
