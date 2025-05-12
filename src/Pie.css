@@ -1,0 +1,16 @@
+#PieWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 0; /* Make sure there's no extra space */
+}
+
+#PieWrapper canvas {
+    display: block;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}

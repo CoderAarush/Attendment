@@ -1,0 +1,9 @@
+.Loginwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Ensure container takes full height */
+    /*background-image: url(./assets/premium_photo-1675603849760-fce371511327.avif);*/
+  
+}

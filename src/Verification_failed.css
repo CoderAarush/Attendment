@@ -1,0 +1,13 @@
+#h11{
+    color: rgb(161, 8, 8)
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+.myWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1, 0, 3);
+    color: white;
+}
+
+  
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensures content is above the banner*/
+    /*background-image: url(./assets/premium_photo-1675603849760-fce371511327.avif);*/
+}
+
+h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 3rem;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    margin-bottom: 10px; /* Ensures space between <h1> and button*/
+}
+#started{
+    color:rgb(228, 23, 167);
+    margin-top: 10px;
+}
+
+/*#btn1 {
+    width: 100px;
+    height: 80px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 100px;
+    background-color: #68057e;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}*/
+
+#btn1 {
+    width: 160px;           /* Increased from 100px for better text fit */
+    height: 50px;           /* Reduced from 80px */
+    border-radius: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px;       /* Reduced top margin */
+    background-color: #68057e;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+#btn1:hover {
+    background-color: #d014b0; /* Change background color on hover*/
+}
+
+h4{
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px; /* Ensures space between button and <h4> */
+    color: lightgray;
+}
+
+h3{
+        font-family: Raleway, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 10px; /* Ensures space between button and <h4> */
+        color: lightgray;
+}
+
+button.mybuttons {
+    color: white;
+    background-color: #68057e;
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.mybuttons:hover {
+    background-color: #d612a5;
+  }
+
+  hr {
+    height: 1.2px;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* optional glow */
+    margin-top: 20px;
+  }
+  
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    h3, h4 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    #btn1, button.mybuttons {
+      width: 140px;
+      height: 45px;
+      font-size: 1rem;
+    }
+  
+    .App {
+      background-size: cover;
+      padding: 10px;
+    }
+  
+    hr {
+      margin: 20px auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body, html, #root {
+      overflow-x: hidden;
+    }
+  
+    .App {
+      padding: 20px;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    h1 {
+      font-size: 2rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+  
+    h3, h4 {
+      font-size: 1.2rem;
+      padding: 0 10px;
+    }
+  
+    #btn1,
+    button.mybuttons {
+      width: 100%;
+      height: 45px;
+      font-size: 1rem;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+  
+    #started {
+      margin-top: 5px;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    hr {
+      margin: 20px 0;
+      height: 6px;
+      width: 90%;
+    }
+  }
+  
+  

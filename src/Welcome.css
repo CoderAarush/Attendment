@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+/* Container styles */
+.myContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Full width */
+  min-height: 100vh; /* Ensure container takes full height */
+  /*background-image: url(./assets/premium_photo-1675603849760-fce371511327.avif);*/
+}
+
+/* Input styles */
+input {
+  margin-top: 1.2rem; /* Relative unit */
+  width: min(90%, 400px); /* Max 450px, but 90% on smaller screens */
+  height: 1rem; /* Relative to font size */
+  border-radius: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1.2rem, 4vw, 1.5rem); /* Scales with viewport */
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+  margin-bottom: 0rem;
+  padding: 0.5rem; /* Add padding for better text alignment */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Button styles */
+
+
+#btn2{
+  width: min(90%, 260px); /* Max 350px, but 80% on smaller screens */
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 1.2rem); /* Responsive font size */
+  background-color: rgb(221, 0 ,251);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0.5rem auto;
+  margin-bottom: 20px;
+}
+
+#btn2:hover{
+  background-color: rgb(230, 115, 240);
+}
+
+#btn3{
+  width: min(90%, 260px); /* Max 350px, but 80% on smaller screens */
+  height: 3rem;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 1.2rem); /* Responsive font size */
+  background-color: rgb(221, 0, 251);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0.5rem auto;
+}
+
+#btn3:hover {
+  background-color: rgb(230, 115, 240); /* Lighter shade to see effect */
+}
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+  .myContainer {
+    margin-top: 5vh; /* Reduce margin on smaller screens */
+  }
+
+  input {
+    width: 100%; /* Full width on small screens */
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  #btn1 {
+    width: 80%;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input {
+    width: 85%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  #btn1 {
+    width: 85%;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+}

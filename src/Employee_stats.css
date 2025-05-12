@@ -1,0 +1,21 @@
+.buttonWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr); /* 2 equal columns */
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 15px; /* spacing between buttons */
+    width: fit-content; /* makes the wrapper only as wide as needed */
+    margin: 0 auto; /* centers the buttons horizontally */
+}
+
+.buttonWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/*.myWrapper{
+    background-image: url(./assets/premium_photo-1675603849760-fce371511327.avif);
+}*/

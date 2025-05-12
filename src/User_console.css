@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+.ConsoleWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-image: url(./assets/premium_photo-1675603849760-fce371511327.avif);*/
+
+}
+
+
+#h12 {
+    margin-bottom: 0px; /* Or even 0 */
+}
+
+h2{
+    font-family: Raleway, sans-serif;
+    font-size: 3rem;
+
+}
+
+button{
+    width: 200px;
+    height: 70px;
+    font-family: Raleway,sans-serif;
+    font-size: 1.3rem;
+}
